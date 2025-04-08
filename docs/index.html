@@ -58,7 +58,7 @@
         const li = document.createElement('li');
         li.className = 'list-group-item';
         li.innerHTML = `
-          <strong>${cls.name}</strong><br>
+          <strong>${cls.name} (${cls.start}-${cls.end})</strong><br>
           <a href="${url}" target="_blank">リンクを開く</a><br>
           <small class="text-muted">${plainUrl}</small>
         `;
