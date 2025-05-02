@@ -12,7 +12,7 @@
     <div class="mb-4">使いかた：繰り返しのon/off → 各授業時間の「リンクを開く」を押す → googleカレンダーに遷移します，細かい調整はgoogleカレンダーで！</div>
     <div class="form-check form-switch mb-4">
       <input class="form-check-input" type="checkbox" id="recurToggle" checked>
-      <label class="form-check-label" for="recurToggle">繰り返し（17回、毎週）を有効にする</label>
+      <label class="form-check-label" for="recurToggle">繰り返し（18回、毎週）を有効にする</label>
     </div>
     <ul class="list-group" id="linkList">
       <!-- リンクがここに入ります -->
@@ -52,8 +52,8 @@
         // URLに使う用（エンコード）
         const encodedText = encodeURIComponent(cls.name);
         // 表示用（非エンコード）
-        const plainUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${cls.name}&dates=${startUTC}/${endUTC}` + (recur ? `&recur=RRULE:FREQ=WEEKLY;COUNT=17` : '');
-        const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodedText}&dates=${startUTC}/${endUTC}` + (recur ? `&recur=RRULE:FREQ=WEEKLY;COUNT=17` : '');
+        const plainUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${cls.name}&dates=${startUTC}/${endUTC}` + (recur ? `&recur=RRULE:FREQ=WEEKLY;COUNT=18` : '');
+        const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodedText}&dates=${startUTC}/${endUTC}` + (recur ? `&recur=RRULE:FREQ=WEEKLY;COUNT=18` : '');
 
         const li = document.createElement('li');
         li.className = 'list-group-item';
